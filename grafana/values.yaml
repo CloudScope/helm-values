@@ -1,4 +1,5 @@
 grafana:
+  adminUser: admin
   autoscaling:
     enabled: true
     minReplicas: 1
