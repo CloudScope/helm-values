@@ -7,6 +7,6 @@ argo-cd:
       targetCPUUtilizationPercentage: 50
       targetMemoryUtilizationPercentage: 50
     service:
-      type: LoadBalancer
-      annotations:
-        service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
+      type: ClusterIP
+#      annotations:
+#        service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
