@@ -20,5 +20,5 @@ grafana:
             periodSeconds: 60
   service:
     type: ClusterIP
-#    annotations:
-#      service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
+    annotations:
+      service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
