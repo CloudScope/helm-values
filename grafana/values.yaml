@@ -1,5 +1,6 @@
 grafana:
   adminUser: admin
+  adminPassword: admin
   autoscaling:
     enabled: true
     minReplicas: 1
