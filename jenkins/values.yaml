@@ -1,2 +1,6 @@
 service:
-  type: ClusterIP
+  type: LoadBalancer
+    annotations:
+      service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
+persistence:
+  enabled: false
