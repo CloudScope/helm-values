@@ -1,0 +1,12 @@
+prometheus:
+  server:
+    persistentVolume:
+      enabled: false
+      size: 8Gi
+      annotations:
+        volume.beta.kubernetes.io/storage-class: "gp2"
+    service:
+      type: LoadBalancer
+      annotations:
+        service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
+        service.beta.kubernetes.io/aws-load-balancer-additional-resource-tags: Environment=Prod,Tier=Grafana
