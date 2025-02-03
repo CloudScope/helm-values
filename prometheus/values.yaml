@@ -10,7 +10,7 @@ prometheus:
       type: LoadBalancer
       annotations:
         service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
-        service.beta.kubernetes.io/aws-load-balancer-additional-resource-tags: Environment=Prod,Tier=Grafana
+        service.beta.kubernetes.io/aws-load-balancer-additional-resource-tags: Environment=Prod,Tier=Prometheus
   alertmanager:
     enabled: true
     persistence:
