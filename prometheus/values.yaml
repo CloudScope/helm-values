@@ -5,6 +5,7 @@ prometheus:
       size: 8Gi
       annotations:
         volume.beta.kubernetes.io/storage-class: "gp2"
+      storageClass: gp2
     service:
       type: LoadBalancer
       annotations:
