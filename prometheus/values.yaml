@@ -3,7 +3,7 @@ prometheus:
     alertmanager:
       enabled: true
       persistence:
-        enabled: true
+        enabled: false
         size: 2Gi
         storageClass: gp2
     persistentVolume:
