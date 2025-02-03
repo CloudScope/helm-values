@@ -1,7 +1,7 @@
 prometheus:
   server:
     persistentVolume:
-      enabled: false
+      enabled: true
       size: 8Gi
       annotations:
         volume.beta.kubernetes.io/storage-class: "gp2"
