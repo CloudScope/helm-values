@@ -1,11 +1,5 @@
 prometheus:
   server:
-    alertmanager:
-      enabled: true
-      persistence:
-        enabled: false
-        size: 2Gi
-        storageClass: gp2
     persistentVolume:
       enabled: true
       size: 8Gi
@@ -17,3 +11,9 @@ prometheus:
       annotations:
         service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
         service.beta.kubernetes.io/aws-load-balancer-additional-resource-tags: Environment=Prod,Tier=Grafana
+  alertmanager:
+    enabled: true
+    persistence:
+      enabled: true
+      size: 2Gi
+      storageClass: gp2
