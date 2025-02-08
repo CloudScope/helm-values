@@ -38,7 +38,7 @@ grafana:
       api_url: https://api.github.com/user
       team_ids:
         - CloudScope:grafana-admin
-      role_attribute_path: contains(groups[*], 'CloudScope/grafana-admin') && 'GrafanaAdmin' || 'None'
+      role_attribute_path: contains(groups[*], '@CloudScope/grafana-admin') && 'GrafanaAdmin' || 'None'
   service:
     type: LoadBalancer
     annotations:
