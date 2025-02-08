@@ -27,4 +27,4 @@ argo-cd:
             - name: CloudScope
     rbac:
       policy.csv: |
-        g, CloudScope:argo-admin, role:org-admin
+        g, CloudScope:argo-admin, role:admin
