@@ -30,8 +30,7 @@ grafana:
       service.beta.kubernetes.io/aws-load-balancer-additional-resource-tags: Environment=Prod,Tier=Grafana
 
 extraDeploy:
-  - |
-    apiVersion: v1
+  - apiVersion: v1
     kind: ConfigMap
     metadata:
       name: grafana-ini-config
