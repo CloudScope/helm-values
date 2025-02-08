@@ -25,6 +25,8 @@ argo-cd:
             redirectURI: http://127.0.0.1:5556/dex/callback
             orgs:
             - name: CloudScope
+              teams:
+              - argo-admin
     rbac:
       policy.csv: |
         g, CloudScope:argo-admin, role:admin
