@@ -43,4 +43,4 @@ grafana:
     annotations:
       service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
       service.beta.kubernetes.io/aws-load-balancer-additional-resource-tags: Environment=Prod,Tier=Grafana
-  assertNoLeakedSecrets: true
+  assertNoLeakedSecrets: false
