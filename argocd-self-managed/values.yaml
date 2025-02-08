@@ -11,3 +11,15 @@ argo-cd:
       annotations:
         service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
         service.beta.kubernetes.io/aws-load-balancer-additional-resource-tags: Environment=Prod,Tier=ArgoCD
+  configs:
+    cm:
+      dex.config: |
+        connectors:
+        - type: github
+          id: github
+          name: GitHub
+          config:
+            clientID: Ov23lisqRbcxcTl1EQkB
+            clientSecret: 8de75f49ac0c285095f406199b2be242135ba3e7
+            orgs:
+            - name: CloudScope
