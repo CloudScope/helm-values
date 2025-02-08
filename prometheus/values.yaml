@@ -1,7 +1,8 @@
 prometheus:
   server:
+    prefixURL: "/prometheus"
     extraArgs:
-      web.route-prefix: "/prometheus"
+      web.route-prefix: "/"
     persistentVolume:
       enabled: true
       size: 8Gi
