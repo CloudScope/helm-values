@@ -13,10 +13,10 @@ argo-cd:
         service.beta.kubernetes.io/aws-load-balancer-additional-resource-tags: Environment=Prod,Tier=ArgoCD
   configs:
     params:
-      server.basehref: /argocd/
-      server.rootpath: '/argocd/'
+      server.basehref: /argocd
+      server.rootpath: '/argocd'
     cm:
-      url: https://a471f4a00f88f4bf6a95f892491d3ad2-467448411.ap-south-1.elb.amazonaws.com/argocd/
+      url: https://a471f4a00f88f4bf6a95f892491d3ad2-467448411.ap-south-1.elb.amazonaws.com/argocd
       dex.config: |
         connectors:
         - type: github
