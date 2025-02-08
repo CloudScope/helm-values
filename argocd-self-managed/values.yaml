@@ -21,5 +21,9 @@ argo-cd:
           config:
             clientID: Ov23lisqRbcxcTl1EQkB
             clientSecret: 8de75f49ac0c285095f406199b2be242135ba3e7
+            redirectURI: http://127.0.0.1:5556/dex/callback
             orgs:
             - name: CloudScope
+    rbac:
+      policy.csv: |
+        g, CloudScope:argo-admin, role:org-admin
