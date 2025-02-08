@@ -30,14 +30,14 @@ grafana:
       service.beta.kubernetes.io/aws-load-balancer-additional-resource-tags: Environment=Prod,Tier=Grafana
 
 extraDeploy:
-  - |
-  apiVersion: v1
-  kind: ConfigMap
-  metadata:
-    name: grafana-ini-config
-  data:
-    grafana.ini: |-
-      [server]
-      domain = a5486dc8a59d442d5ad4273b62938dc8-353203771.ap-south-1.elb.amazonaws.com
-      root_url = http://a5486dc8a59d442d5ad4273b62938dc8-353203771.ap-south-1.elb.amazonaws.com/grafana/
-      serve_from_sub_path = true
+  |-
+    apiVersion: v1
+    kind: ConfigMap
+    metadata:
+      name: grafana-ini-config
+    data:
+      grafana.ini: |-
+        [server]
+        domain = a5486dc8a59d442d5ad4273b62938dc8-353203771.ap-south-1.elb.amazonaws.com
+        root_url = http://a5486dc8a59d442d5ad4273b62938dc8-353203771.ap-south-1.elb.amazonaws.com/grafana/
+        serve_from_sub_path = true
