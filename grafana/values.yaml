@@ -25,6 +25,19 @@ grafana:
       root_url: http://a5486dc8a59d442d5ad4273b62938dc8-353203771.ap-south-1.elb.amazonaws.com/grafana/
       domain: a5486dc8a59d442d5ad4273b62938dc8-353203771.ap-south-1.elb.amazonaws.com
       serve_from_sub_path: true
+    auth.github:
+      enabled: true
+      allow_sign_up: true
+      name: GitHub
+      icon: github
+      client_id: Ov23li2ymrCuq4ySYaMn
+      client_secret: 90b26ba8e13070c1d5f85948bc17b9f67fcc3eca
+      scopes: user:email,read:org
+      auth_url: https://github.com/login/oauth/authorize
+      token_url: https://github.com/login/oauth/access_token
+      api_url: https://api.github.com/user
+      team_ids:
+        - CloudScope:grafana-admin
   service:
     type: LoadBalancer
     annotations:
